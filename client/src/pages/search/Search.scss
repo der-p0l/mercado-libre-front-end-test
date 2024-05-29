@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+#search {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  gap: 16px;
+
+  #no-results {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  #list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    width: 100%;
+    border-radius: 4px;
+
+    .item {
+      border-bottom: 1px solid $bright-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.breadcrumb {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+
+    @media (min-width: $breakpoint-md) {
+      & {
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      line-height: 14px;
+      color: $mid-bright-color;
+      width: 100%;
+      padding-bottom: 4px;
+      border-bottom: 1px solid $mid-bright-color;
+      gap: 8px;
+
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      @media (min-width: $breakpoint-md) {
+        & {
+          width: initial;
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+
+      span.active {
+        font-weight: bold;
+      }
+
+      span.divisor {
+        display: none;
+
+        @media (min-width: $breakpoint-md) {
+          & {
+            display: initial;
+          }
+        }
+      }
+    }
+  }
+}

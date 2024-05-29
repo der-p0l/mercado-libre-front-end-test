@@ -1,0 +1,80 @@
+@import "../../styles/variables.scss";
+
+$navbar-content-height: calc($navbar-height - 24px);
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: $navbar-height;
+  background-color: $primary-color;
+
+  .container {
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    #navbar-logo {
+      position: relative;
+
+      a {
+        top: 0;
+        left: 0;
+
+        img {
+          display: block;
+          width: auto;
+          height: $navbar-content-height;
+        }
+      }
+    }
+
+    #navbar-search {
+      position: relative;
+      width: 100%;
+      height: $navbar-content-height;
+      overflow: hidden;
+      border-radius: 4px;
+
+      form {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        #navbar-input {
+          font-size: 18px;
+          border: none;
+          background-color: $white;
+          padding: 0 14px;
+          height: 100%;
+          width: 100%;
+        }
+
+        #navbar-button {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: calc($navbar-content-height + 8px);
+          height: $navbar-content-height;
+          padding: 8px 14px;
+          cursor: pointer;
+          border: none;
+          background-color: $bright-color;
+
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
