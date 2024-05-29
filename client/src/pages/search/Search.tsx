@@ -1,4 +1,4 @@
-import Breadcrumb from "../../components/breacrumb/Breadcrumb";
+import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import Loading from "../../components/loading/Loading";
 import Item from "./components/item/Item";
 import useSearch from "./hooks/useSearch";

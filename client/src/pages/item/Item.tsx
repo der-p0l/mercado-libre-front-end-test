@@ -1,4 +1,4 @@
-import Breadcrumb from "../../components/breacrumb/Breadcrumb";
+import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import Loading from "../../components/loading/Loading";
 import Price from "../../components/price/Price";
 import useItem from "./hooks/useItem";
